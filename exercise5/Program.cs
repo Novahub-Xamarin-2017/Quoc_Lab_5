@@ -11,9 +11,9 @@ namespace exercise5
         {
             try
             {
-                var jsonFile = File.ReadAllText("E:\\Projects\\Quoc_Lab_5\\exercise5\\books.json");
+                var jsonFile = File.ReadAllText("books.json");
                 var doc = JsonConvert.DeserializeXmlNode("{\"Books\":" + jsonFile + "}", "root");
-                File.WriteAllText("E:\\Projects\\Quoc_Lab_5\\exercise5\\books.xml", XDocument.Parse(doc.InnerXml).ToString());
+                File.WriteAllText("books.xml", XDocument.Parse(doc.InnerXml).ToString());
                 Console.ReadKey();
             }
             catch (Exception e)
