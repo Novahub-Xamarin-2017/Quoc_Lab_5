@@ -2,9 +2,9 @@
 
 namespace exercise1
 {
-    public class ObjectHelper
+    public class MailChimpObjects
     {
-        public static Object GetListObject()
+        public static Object CreateListObject()
             => new
             {
                 name = "Xamarin test 2",
@@ -30,7 +30,7 @@ namespace exercise1
                 email_type_option = true
             };
 
-        public static object GetCampaignObject(string listId)
+        public static object CreateCampaignObject(string listId)
             => new
             {
                 recipients = new
@@ -46,7 +46,7 @@ namespace exercise1
                 }
             };
 
-        public static object GetEmailObject(string email)
+        public static object CreateEmailObject(string email)
             => new
             {
                 email_address = email,
@@ -56,10 +56,10 @@ namespace exercise1
                     FNAME = "Foo",
                     LNAME = "Bar"
                 },
-                status_if_new = "subscribed"
+                status = "subscribed"
             };
 
-        public static object GetContentObject(string content)
+        public static object CreateContentObject(string content)
             => new
             {
                 html = content,

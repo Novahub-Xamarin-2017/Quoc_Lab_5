@@ -121,9 +121,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="models\Campaign.cs" />
     <Compile Include="ICampaignService.cs" />
     <Compile Include="IListService.cs" />
-    <Compile Include="ObjectHelper.cs" />
+    <Compile Include="MailChimpObjects.cs" />
+    <Compile Include="models\CampaignDefaults.cs" />
+    <Compile Include="models\Contact.cs" />
+    <Compile Include="models\DeliveryStatus.cs" />
+    <Compile Include="models\EmailList.cs" />
+    <Compile Include="models\Link.cs" />
+    <Compile Include="models\ListList.cs" />
+    <Compile Include="models\Recipients.cs" />
+    <Compile Include="models\Settings.cs" />
+    <Compile Include="models\Stats.cs" />
+    <Compile Include="models\Tracking.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

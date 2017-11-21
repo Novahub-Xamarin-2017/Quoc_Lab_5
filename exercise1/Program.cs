@@ -14,22 +14,24 @@ namespace exercise1
             // init service
             var listService = GetService<IListService>(url, apiKey);
             // create a new list
-            var list = ObjectHelper.GetListObject();
-            Console.WriteLine(listService.CreateList(list).ResponseStatus);
+            var list = MailChimpObjects.CreateListObject();
+            var listResponse = listService.CreateList(list);
+            Console.WriteLine($"Create List : {listResponse.ResponseStatus}");
             // add an email to list
-            var listId = "ea602c2f5c";
-            var emailSubcriber = ObjectHelper.GetEmailObject("quoctran2124@gmail.com");
-            Console.WriteLine(listService.AddEmail(listId,emailSubcriber));
+            var listId = listResponse.Data.Id;
+            var emailSubcriber = MailChimpObjects.CreateEmailObject("stevelee2497@gmail.com");
+            Console.WriteLine($"Add Email : {listService.AddEmail(listId, emailSubcriber).ResponseStatus}");
             // create a new campaign
             var campaignService = GetService<ICampaignService>(url, apiKey);
-            var campaign = ObjectHelper.GetCampaignObject(listId);
-            Console.WriteLine(campaignService.CreateCampaigns(campaign).ResponseStatus);
+            var campaign = MailChimpObjects.CreateCampaignObject(listId);
+            var campaignResponse = campaignService.CreateCampaigns(campaign);
+            Console.WriteLine($"Create campaign : {campaignResponse.ResponseStatus}");
             // set content for a campaign
-            var campaignId = "39494cd8ea";
-            var content = ObjectHelper.GetContentObject("Hello there!");
-            Console.WriteLine(campaignService.SetContent(campaignId,content));
+            var campaignId = campaignResponse.Data.Id;
+            var content = MailChimpObjects.CreateContentObject("Hello there!");
+            Console.WriteLine($"Set content for campaign : {campaignService.SetContent(campaignId, content).ResponseStatus}");
             // send campaign
-            Console.WriteLine(campaignService.SendCampaign(campaignId));
+            Console.WriteLine($"Send campaign : {campaignService.SendCampaign(campaignId).ErrorException}");
             Console.ReadKey();
         }
         
