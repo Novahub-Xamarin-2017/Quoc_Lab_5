@@ -121,7 +121,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IHelper.cs" />
+    <Compile Include="ICampaignService.cs" />
+    <Compile Include="IListService.cs" />
+    <Compile Include="ObjectHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
