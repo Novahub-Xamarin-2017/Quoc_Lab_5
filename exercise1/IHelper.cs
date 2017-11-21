@@ -5,7 +5,7 @@ using Retrofit.Net.Attributes.Parameters;
 
 namespace exercise1
 {
-    public interface IHelper
+    public interface IMailChimpService
     {
         [Post("lists")]
         RestResponse<bool> CreateList([Body] Object obj);
