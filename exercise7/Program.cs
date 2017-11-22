@@ -11,7 +11,7 @@ namespace exercise7
     {
         static void Main(string[] args)
         {
-            string[] urls =
+            List<string> urls = new List<string>()
             {
                 "http://danabus.vn/data/2/bus-services.json",
                 "http://danabus.vn/data/2/bus-services/5.json",
@@ -20,10 +20,7 @@ namespace exercise7
                 "http://danabus.vn/data/2/bus-services/11.json",
                 "http://danabus.vn/data/2/bus-services/12.json"
             };
-            foreach (var url in urls)
-            {
-                ConvertJsonToXml(url);
-            }
+            urls.ForEach(ConvertJsonToXml);
             Console.ReadKey();
         }
 
@@ -38,10 +35,6 @@ namespace exercise7
         }
 
         private static string GetXmlFileName(string url)
-        {
-            var splittedUrl = url.Split('/');
-            var fileName = splittedUrl[splittedUrl.Length - 1].Replace("json", "xml");
-            return fileName;
-        }
+            => url.Substring(url.LastIndexOf('/') + 1).Replace("json", "xml");
     }
 }
