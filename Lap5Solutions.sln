@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercise4", "exercise4\exer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercise2", "exercise2\exercise2.csproj", "{012FCDCF-06CD-4AB8-A444-51FE5EC2A68B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercise7", "exercise7\exercise7.csproj", "{19FAEB53-5E4B-4561-91D3-61FEEB4637FE}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercise5", "exercise5\exercise5.csproj", "{C57C4FF4-C57E-449B-A646-6944149292AB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercise6", "exercise6\exercise6.csproj", "{02C161C8-E2EF-4220-BE9A-64DC5E5690D6}"
@@ -31,6 +33,10 @@ Global
 		{012FCDCF-06CD-4AB8-A444-51FE5EC2A68B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{012FCDCF-06CD-4AB8-A444-51FE5EC2A68B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{012FCDCF-06CD-4AB8-A444-51FE5EC2A68B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19FAEB53-5E4B-4561-91D3-61FEEB4637FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19FAEB53-5E4B-4561-91D3-61FEEB4637FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19FAEB53-5E4B-4561-91D3-61FEEB4637FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19FAEB53-5E4B-4561-91D3-61FEEB4637FE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C57C4FF4-C57E-449B-A646-6944149292AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C57C4FF4-C57E-449B-A646-6944149292AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C57C4FF4-C57E-449B-A646-6944149292AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
